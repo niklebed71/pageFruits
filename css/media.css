@@ -1,0 +1,206 @@
+
+@media(max-width:1250px){
+	.header__fixed { 
+		padding:50px 10px 43px 10px;
+	}
+	 .hero-inner-wrapper {
+		padding: 93px 10px 33px 10px;
+		background-size: auto;
+	}  
+	.service-wrapper {
+		flex-wrap: wrap;
+	}
+	.vegetable-inner-wrapper {
+        padding: 89px 10px 143px 10px;
+    }
+	section.app {
+        padding: 0px 10px 143px;
+    }
+	.app-wrapper {
+        padding: 0px 35px;
+    }
+	.footer {
+        padding: 67px 10px 118px;
+    }
+	
+} 
+@media(max-width:980px){
+	.hero-wrapper {
+		flex-wrap: wrap;
+		justify-content: center;
+	}  
+	.hero-list {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+		justify-content: center;	
+		flex: 1;
+	}
+	.hero-item {
+		width: 250px;
+	}  
+	.hero-item:not(:last-child) {
+		margin: 0 0 0px 0; 
+	}
+	.customer-title{
+		font-size: 60px;
+		line-height: 80px;
+	}
+	.customer-wrapper {
+        flex-direction: column; 
+        align-items: center; 
+	}
+	.app-wrapper {
+        padding: 0px 5px;
+		flex-wrap: wrap;
+		flex-direction: column-reverse; 
+    } 
+	.footer-block {
+        width: 48%;
+		text-align: center;
+    }
+	.footer-social {
+		justify-content: center;
+    }
+	.footer-logo {
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+}
+@media(max-width:850px){
+    .nav { 
+		position: absolute;
+		z-index: 2;
+		top: 120px;
+		bottom: 0;
+		right: 100%;
+		left: -50%;
+		background-color:var(--bg-mint-cream);
+		height: 100vh; 
+		 overflow-x: hidden; 
+		 border-top: 1px solid var(--btn-border);
+		 transition: 0.5s linear; 
+		 z-index: 2;
+}
+.nav.active {
+	right: 0;
+	left: 0;
+	font-size: 25px;
+}
+.menu {
+	flex-direction: column;
+	padding: 30px 0 0 30px ;
+	gap: 30px;
+}
+.burger {
+    display: block; 
+	width: 40px;
+	height: 30px; 
+	background: url(../images/burger.svg) center no-repeat;
+	transform: rotate(0deg);
+	transition: 0.3s linear; 
+}
+.burger.active {
+	background: url(../images/close.svg) center no-repeat;
+	transform: rotate(180deg);
+}
+.service {
+	padding: 10px 10px;
+}
+}
+@media(max-width:768px){
+    .inner-title {
+		text-align: center;
+	}
+	.header-link {
+		display: none; 
+	}
+	.cart {
+		margin: 0 5px 0 20px;
+	}
+	.service-text {
+		padding: 0 10px;
+	}
+	.vegetable-inner-wrapper {
+       background-size: 50%;
+    }
+	.customers {
+		padding: 40px 10px 80px 10px;
+	}
+	.customer-text{
+		width: 100%;
+	 }
+	 .customer-content{
+		width: 100%;
+	 }
+	 .app-contant {
+		width: 100%;
+	}
+	.app-text {
+		width: 100%;
+	}
+	.footer {
+		padding: 20px 10px 118px;
+	}
+	.footer-wrapper {
+		justify-content: center;
+	}
+	.footer-text {
+		width: 100%; 
+	}
+	.footer-title {
+		margin: 10px 0 10px;
+	}
+}
+@media(max-width:590px){
+	.inner-title {
+		font-size: 60px;
+	}
+	.hero-inner-wrapper {
+		min-width: 100%;
+	}
+	.service-img {
+		width: 100%;
+		height: 100%;
+		background-image: url(../images/elips-fruit.png);
+	}
+	.vegetable-inner-wrapper {
+		padding: 19px 10px 143px 10px;
+		background-position: right 50px bottom 10%;	
+	 }
+	 .customer-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media(max-width:450px){
+	form.form {
+		display: none;
+	}
+	.cart {
+		margin: 0 5px 0 0px;
+	}
+	.service-item {
+		padding: 30px 20px 30px 20px;	
+	}
+	.inner-title {
+		font-size: 45px;
+		line-height: 60px;
+		text-align: center;
+	}
+	.service-item span:first-child,
+	.service-item::before {
+		display: none;	
+	}
+	.service-img  {
+		 background-size: 100%; 
+	}
+	.service-img figure {
+		padding: 0 0 40% 0;
+	}
+}    
+@media(min-width:850px){ 
+	.hidden{
+		overflow-y: scroll; 
+	}
+}    
